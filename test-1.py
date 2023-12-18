@@ -11,8 +11,6 @@ ColorTable=['blue','orange','green']
 Country_Names=[]   
 
 ProcessedData = pd.read_csv(r'C:\OTHER FILES\University\3. Fall 2023\Planning For changes In Information Technology\Python\Pandas\Tkinter-1\Data.csv')
-ProcessedData=ProcessedData.dropna() #remove empty rows that don't have any number
-ProcessedData.to_csv(r'C:\OTHER FILES\University\3. Fall 2023\Planning For changes In Information Technology\Python\Pandas\Tkinter-1\Data_Processed.csv')
 column1_list = ProcessedData['Country Name'].tolist()
 
 def selection_changed(event):
